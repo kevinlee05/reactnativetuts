@@ -4,12 +4,12 @@ import { Text, View } from 'react-native';
 // View tag is used to position elements
 
 // make a component
-const Header = () => {
+const Header = (props) => {
     const { textStyle, viewStyle } = styles;
 
     return (
         <View style={viewStyle}>
-            <Text style={textStyle}>Albums App!</Text>
+            <Text style={textStyle}>{props.headerText}</Text>
         </View>
         
     );
