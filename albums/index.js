@@ -7,7 +7,7 @@ import AlbumList from './src/components/AlbumList';
 // Create a component
 const App = () =>  (
     <View style={{ flex: 1 }}>  
-    {/* flex 1 means expand content to fill entire device */}
+    {/* flex 1 means expand content to fill entire device. must be added to rootview for scrollview child components to work */}
         <Header headerText={'Albums App!'} />
         <AlbumList />
     </View>
