@@ -5,7 +5,7 @@ import Card from './Card';
 import CardSection from './CardSection';
 
 const AlbumDetail = ({ album }) => {
-    const {title, artist, thumbnail_image, image, url} = album; //desructure elements from album
+    const {title, artist, thumbnail_image, image, url} = album; // desructure elements from album
     const {
         thumbnailStyle, 
         headerContentStyle,
