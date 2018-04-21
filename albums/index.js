@@ -6,7 +6,8 @@ import AlbumList from './src/components/AlbumList';
 
 // Create a component
 const App = () =>  (
-    <View>
+    <View style={{ flex: 1 }}>  
+    {/* flex 1 means expand content to fill entire device */}
         <Header headerText={'Albums App!'} />
         <AlbumList />
     </View>
