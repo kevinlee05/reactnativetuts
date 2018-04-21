@@ -1,13 +1,18 @@
 import React from 'react';
 import { TextInput, View, Text } from 'react-native';
 
-const Input = ({ label }) => {
+const Input = ({ label, value, onChangeText }) => {
     return (
         <View>
             <Text>{label}</Text>
-            <TextInput></TextInput>
+            <TextInput 
+                value={value}
+                onChangeText={onChangeText}
+                style={{height:50, width:100}}
+            />
         </View>
     )
 }
+
 
 export { Input };
