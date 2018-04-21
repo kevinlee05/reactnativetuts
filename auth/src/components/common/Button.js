@@ -26,7 +26,7 @@ const styles = {
     buttonStyle: {
         flex: 1, //expand to fill content space
         alignSelf: 'stretch', //stretch to fill container
-        backgroundColor: '#fff',
+        backgroundColor: 'yellow',
         borderRadius: 5,
         borderWidth: 1,
         borderColor: '#007aff', //ios blue
