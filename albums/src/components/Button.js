@@ -2,11 +2,11 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 //touchable opacity is a button class
 
-const Button = () => {
-    const { buttonStyle, textStyle } = styles;
+const Button = ({ onPress }) => {
+    const { buttonStyle, textStyle } = styles;;
 
     return (
-        <TouchableOpacity style={buttonStyle}>
+        <TouchableOpacity onPress={onPress} style={buttonStyle}>
             <Text style={textStyle}>
                 Click Me!!!
             </Text>
@@ -26,7 +26,7 @@ const styles = {
     buttonStyle: {
         flex: 1, //expand to fill content space
         alignSelf: 'stretch', //stretch to fill container
-        bakgroundColor: '#fff',
+        backgroundColor: '#fff',
         borderRadius: 5,
         borderWidth: 1,
         borderColor: '#007aff', //ios blue
